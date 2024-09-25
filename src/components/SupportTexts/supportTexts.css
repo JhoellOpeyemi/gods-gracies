@@ -1,0 +1,36 @@
+.support-texts-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.support-texts-container p {
+  font-size: clamp(1.15rem, 1.75vw + 0.35rem, 2rem);
+}
+
+.support-texts-container p span {
+  font-weight: 700;
+}
+
+.support-texts-container a {
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .support-texts-container {
+    width: 90%;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .support-texts-container {
+    padding-top: 4rem;
+  }
+}
