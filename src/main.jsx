@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./routes/Home.jsx";
 import Support from "./routes/Support.jsx";
 import About from "./routes/About.jsx";
+import Catalogue from "./routes/Catalogue.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/support",
         element: <Support />,
+      },
+      {
+        path: "/catalogue",
+        element: <Catalogue />,
       },
     ],
   },

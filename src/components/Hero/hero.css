@@ -9,7 +9,7 @@
 
 .hero-heading {
   height: 40%;
-  padding-top: 6rem;
+  padding-top: 7rem;
   font-family: "Helvetica Regular";
   font-size: clamp(1.8rem, 4vw + 0.65rem, 4rem);
   font-weight: 400;
@@ -23,11 +23,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .hero-text {
-  width: 40%;
+  width: 45%;
   padding-top: 2.25rem;
 }
 
@@ -36,13 +36,44 @@
 }
 
 .hero-media {
-  width: 60%;
+  width: 55%;
 }
 
-.hero-media .video {
+.hero-media .image-wrapper {
+  position: relative;
   width: 100%;
   height: 50vh;
   background-color: grey;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transform: scale(1.2);
+}
+
+.notification {
+  position: absolute;
+  top: 5.75rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 20rem;
+  background-color: #367db7;
+  padding: 0.5rem 0 0.5rem 12rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+.notification p {
+  flex-shrink: 0;
+  animation: scroll 30s linear infinite;
+  color: #fafafa;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 20rem));
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -50,7 +81,7 @@
     height: max-content;
     display: flex;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 9.5rem;
     gap: 4rem;
   }
 

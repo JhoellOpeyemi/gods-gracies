@@ -1,0 +1,32 @@
+.testimonial {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.testimonial .text {
+  font-size: clamp(1.15rem, 1.75vw, 1.3rem);
+}
+
+.testimonial .name {
+  font-size: clamp(1rem, 1.75vw, 1.2rem);
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    width: 400px;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .testimonial {
+    width: 85vw;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+}

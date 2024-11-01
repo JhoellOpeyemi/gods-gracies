@@ -1,5 +1,19 @@
 .about-content {
-  padding: 9rem 0 5rem;
+  padding: 10rem 0 2rem;
+}
+
+.about-content .desc {
+  margin: 5rem auto 3rem;
+  width: 70%;
+}
+
+.vision-mission {
+  margin: 3rem auto 8rem;
+  width: 70%;
+}
+
+.vision-mission p {
+  margin: 0.7rem 0 2rem;
 }
 
 .about-team-lead {
@@ -25,27 +39,50 @@
   padding-top: 9.5rem;
 }
 
-.about-other-team {
-  width: 100%;
+.other-team-members {
+  overflow-x: hidden;
+  padding: 0 0 3rem;
+  position: relative;
+}
+
+.other-team-members .scrollbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 16%;
+  height: 4px;
+  background-color: #367db7;
+}
+
+.other-team-members::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-heading {
+  font-size: clamp(1.35rem, 1.75vw, 1.7rem);
+  margin-bottom: 2rem;
+}
+
+.testimonial-slider {
+  width: max-content;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
+  flex-wrap: nowrap;
 }
 
-.about-other-team .image-wrapper {
-  width: 65%;
+.btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 4.5rem;
 }
 
-.about-other-team .image {
-  width: 100%;
-  height: 23rem;
-  background-color: grey;
-}
-
-.about-other-team p {
-  width: 80%;
+.btn {
+  border: none;
+  background: none;
+  font-size: clamp(1.75rem, 1.75vw, 2.25rem);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,47 +107,56 @@
     padding-top: 0;
   }
 
-  .about-other-team {
-    justify-content: center;
-    align-items: flex-end;
-    gap: 3rem;
-  }
-
-  .about-other-team .image-wrapper {
-    width: 75%;
-  }
-
-  .about-other-team .image {
-    width: 100%;
-    height: 19rem;
-  }
-
-  .about-other-team p {
+  .about-content .desc {
+    margin: 4rem 0 3rem;
     width: 90%;
-    text-align: right;
+  }
+
+  .vision-mission {
+    margin: 3rem 0 6rem;
+    width: 90%;
+  }
+
+  .testimonial-slider {
+    gap: 3rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 560px) {
+  .other-team-members {
+    padding: 0 0 6rem;
+  }
+
+  .about-content .desc {
+    margin: 4rem 0 3rem;
+    width: 100%;
+  }
+
+  .vision-mission {
+    margin: 3rem 0 6rem;
+    width: 100%;
+  }
+
+  .testimonial-slider {
+    gap: 0.5rem;
+  }
+
+  .btn-group {
+    top: unset;
+    right: unset;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
   .about-team-lead .image-wrapper {
     width: 90%;
   }
 
   .about-team-lead p {
     width: 100%;
-  }
-
-  .about-other-team .image-wrapper {
-    width: 90%;
-  }
-
-  .about-other-team .image {
-    width: 100%;
-    height: 17rem;
-  }
-
-  .about-other-team p {
-    width: 100%;
-    text-align: left;
   }
 }

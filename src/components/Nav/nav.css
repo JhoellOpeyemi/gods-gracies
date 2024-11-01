@@ -4,15 +4,17 @@
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
-  max-width: 1200px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 9;
 }
 
 .logo {
   line-height: 1;
   font-size: 1.15rem;
+  color: #367db7;
 }
 
 .nav-links-wrapper {
@@ -36,12 +38,16 @@
   height: 0.05rem;
   bottom: -0.05rem;
   left: 0;
-  background-color: #444;
+  background-color: #367db7;
   transition: all 0.5s;
 }
 
 .nav-link:hover::before {
   width: 100%;
+}
+
+.nav-link.active {
+  color: #367db7;
 }
 
 .nav-link.active::before {
