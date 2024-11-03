@@ -9,7 +9,7 @@
 
 .hero-heading {
   height: 40%;
-  padding-top: 7rem;
+  padding-top: 8rem;
   font-family: "Helvetica Regular";
   font-size: clamp(1.8rem, 4vw + 0.65rem, 4rem);
   font-weight: 400;

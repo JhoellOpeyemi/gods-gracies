@@ -44,6 +44,26 @@ img {
   object-fit: cover;
 }
 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  width: 100%;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #367db7;
+}
+
 .container {
   position: relative;
   width: 90vw;

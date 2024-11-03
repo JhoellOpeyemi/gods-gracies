@@ -6,7 +6,7 @@ import "./index.css";
 import Home from "./routes/Home.jsx";
 import Support from "./routes/Support.jsx";
 import About from "./routes/About.jsx";
-import Catalogue from "./routes/Catalogue.jsx";
+import Media from "./routes/Media.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
         element: <Support />,
       },
       {
-        path: "/catalogue",
-        element: <Catalogue />,
+        path: "/media",
+        element: <Media />,
       },
     ],
   },

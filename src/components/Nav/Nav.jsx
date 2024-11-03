@@ -16,7 +16,7 @@ const Nav = () => {
   const links = [
     { path: "/", label: "Home" },
     { path: "/about", label: "Who We Are" },
-    { path: "/catalogue", label: "Catalogue" },
+    { path: "/media", label: "Media" },
     { path: "/support", label: "Support Us" },
   ];
 
@@ -44,7 +44,6 @@ const Nav = () => {
           opacity: 1,
           duration: 0.6,
           stagger: 0.02,
-          ease: "back",
         },
         "-=0.3"
       );
@@ -78,7 +77,7 @@ const Nav = () => {
       </div>
 
       <button className="hamburger" onClick={handleNav}>
-        Menu
+        {nav ? "Close" : "Menu"}
       </button>
     </nav>
   );

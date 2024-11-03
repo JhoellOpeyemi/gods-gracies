@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 import Testimonials from "../Testimonials/Testimonials";
 import { data } from "../../testimonials";
+import image from "/assets/anjy.jpg";
 
 import "./aboutContent.css";
 
@@ -71,7 +72,7 @@ const AboutContent = () => {
 
         <div className="about-team-lead">
           <div className="image-wrapper">
-            <div className="image"></div>
+            <img src={image} alt="Anjola Obashola" className="image" />
           </div>
 
           <p>

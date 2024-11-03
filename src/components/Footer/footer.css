@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem 0 2rem;
+  color: #367db7;
+  border-top: 1px solid #367db7;
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 3rem 0 0;
+    padding: 2rem 0 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer-links {
+    gap: 2rem;
+  }
+}

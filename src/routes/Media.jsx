@@ -4,25 +4,25 @@ import { useGSAP } from "@gsap/react";
 
 import Loader from "../components/Loader/Loader";
 import Nav from "../components/Nav/Nav";
-import SupportTexts from "../components/SupportTexts/SupportTexts";
+import MediaContent from "../components/MediaContent/MediaContent";
 import Footer from "../components/Footer/Footer";
 
 gsap.registerPlugin(useGSAP);
 
-const Support = () => {
+const Catalogue = () => {
   const [loader, setLoader] = useState(true);
-  const supportRef = useRef();
+  const mediaRef = useRef();
 
   useGSAP(
     () => {
       if (loader == false) {
-        gsap.to(".support-container", {
+        gsap.to(".media-container", {
           duration: 0.5,
           opacity: 1,
         });
       }
     },
-    { dependencies: [loader], scope: supportRef.current }
+    { dependencies: [loader], scope: mediaRef.current }
   );
 
   return (
@@ -30,10 +30,10 @@ const Support = () => {
       {loader ? (
         <Loader setLoader={setLoader} />
       ) : (
-        <div ref={supportRef}>
-          <div className="support-container" style={{ opacity: 0 }}>
+        <div ref={mediaRef}>
+          <div className="media-container" style={{ opacity: 0 }}>
             <Nav />
-            <SupportTexts />
+            <MediaContent />
             <Footer />
           </div>
         </div>
@@ -42,4 +42,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Catalogue;
