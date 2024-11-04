@@ -12,7 +12,11 @@ const SupportTexts = () => {
         Small, Helps Us Build a World Where No Child Feels Alone.
       </p>
 
-      <a href="/" className="button">
+      <a
+        href="mailto:obasholaanjola@gmail.com"
+        target="_blank"
+        className="button"
+      >
         Support Us Today
       </a>
     </div>

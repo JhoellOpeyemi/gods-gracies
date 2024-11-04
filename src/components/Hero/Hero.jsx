@@ -31,7 +31,11 @@ const Hero = () => {
             Support Today.
           </p>
 
-          <a href="/" className="button">
+          <a
+            href="mailto:obasholaanjola@gmail.com"
+            target="_blank"
+            className="button"
+          >
             Support Us
           </a>
         </div>
